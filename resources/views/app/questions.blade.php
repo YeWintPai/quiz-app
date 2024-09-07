@@ -9,17 +9,7 @@
     <link rel="stylesheet" href="{{asset('/storage/app/css/questions.style.css')}}">
 </head>
 <body>
-    <!-- Nav -->
-    <nav class="navbar navbar-expand-lg navBg ">
-        <div class="container-fluid navBg">
-                <ul class="navbar-nav navMenuBox">
-                    <li class="nav-item navItemText ">
-                        <a class="nav-link text-light htmlForm" aria-current="page" href="#">{{$lang}}
-                        </a>
-                    </li>
-                </ul>
-        </div>
-    </nav>
+    <h1 class="text-light htmlForm" aria-current="page">{{$lang}}</h1>
 
     <div class="containerBox bg-secondary-subtle">
         <img src="{{asset('/storage/app/img/close-cancel-svgrepo-com.png')}}" class="iconBox" alt="cancel">
@@ -45,25 +35,18 @@
             @foreach ($choices as $index => $choice)
                 <button 
                     type="button" 
-                    class="btn btn-light btnBoxItemList btn-submit
-                        {{ $choice['selected'] && $choice['is_correct'] ? 'btn-success' : '' }}
-                        {{ $choice['selected'] && !$choice['is_correct'] ? 'btn-danger' : '' }}"
+                    class="btn btn-light btnBoxItemList btn-submit"
                     name="answer" 
                     value="{{ $choice['is_correct'] }}" 
                     data-correct="{{ $choice['is_correct'] }}"
-                    {{ isset($disabled) && $disabled ? "disabled" : "" }}> <!-- Disable if passed -->
+                    > 
                     {{ chr(65 + $index) }} <!-- A, B, C, D -->
                 </button>
             @endforeach
             </div>
         </form>
         
-    </div>
-    <div id="direction" class="btnBoxDirection">
-        <button type="button" class="btn btn-outline-secondary btnBoxItemList float-start d-none" id="prevButton">Previous</button>
-        <button type="button" class="btn btn-outline-secondary btnBoxItemList float-start d-none" id="nextButton">Next</button>
-    </div>
-
+    </div> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

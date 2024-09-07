@@ -80,7 +80,7 @@
 
     <!-- body -->
     <div class="container div-container mt-5">
-        <h1 style="font-weight: 900;">Are you preparing for the quiz?</h1>
+        <h1 style="font-weight: 900;">Are you ready for the quiz?</h1>
         <button class="btn-start">Start quiz</button>
         <button class="btn-exit">Exit</button>
     </div>

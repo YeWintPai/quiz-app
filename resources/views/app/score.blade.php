@@ -71,7 +71,7 @@
             </p>
             @break
             @endswitch()
-            
+
             <a href="{{url('/app')}}" class="btn btn-result mt-5">Take another quiz</a>
           </div>
         </div>
@@ -83,5 +83,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0" nonce="N6IJL1gm"></script>
   </body>
 </html>
