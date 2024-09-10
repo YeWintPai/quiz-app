@@ -19,6 +19,8 @@
                     <label class="input-group-text">Choose Language</label>
                         <select class="form-select" name="language">
                             <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="javascript">Javascript</option>
                         </select>
             </div>
         </div>

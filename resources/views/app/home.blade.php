@@ -109,7 +109,7 @@
           </button>
           <ul class="dropdown-menu w-100 f-size-15">
             <li><a class="dropdown-item choose-language-btn" href="{{url('/app/languages/choose')}}" data-lang="html">HTML</a></li>
-            <!-- <li><a class="dropdown-item choose-language-btn" href="{{url('/app/languages/choose')}}" data-lang="css">CSS</a></li> -->
+            <li><a class="dropdown-item choose-language-btn" href="{{url('/app/languages/choose')}}" data-lang="css">CSS</a></li>
           </ul>
         </div>
       </div>
