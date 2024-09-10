@@ -5,9 +5,6 @@ Please check the official laravel installation guide for server requirements bef
 
 Alternative installation is possible without local dependencies relying on [Docker](#docker). 
 Please install XAMPP,Composer and Laravel 9.x.
-Create project directory using composer 
-
-    composer create-project laravel/laravel:^9 CodeCraftersQuizApp
     
 Clone the repository
 
@@ -16,13 +13,14 @@ Clone the repository
 Switch to the repo folder
 
     cd laravel-quiz-app
+    
 Install all the dependencies using composer
 
     composer install
 
 Copy the example env file and make the required configuration changes in the .env file
 
-    cp .env.example .env
+    copy .env.example and rename the .env.copy.example to .env
 
 Generate a new application key
 
@@ -31,6 +29,10 @@ Generate a new application key
 Run the database migrations (**Set the database connection in .env before migrating**)
 
     php artisan migrate
+
+Link the storage 
+
+    php artisan storage:link
 
 Start the local development server
 
