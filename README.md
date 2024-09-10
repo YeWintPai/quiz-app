@@ -30,9 +30,6 @@ Run the database migrations (**Set the database connection in .env before migrat
 
     php artisan migrate
 
-Link the storage 
-
-    php artisan storage:link
 
 Start the local development server
 
