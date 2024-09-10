@@ -1,10 +1,11 @@
 
 ## Installation
+Install XAMPP,Composer and Laravel 9.x.
+After installation start XAMPP.
+Setting up MySQL
 
-Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/5.4/installation#installation)
+    import quiz_app.sql in localhost/phpmyadmin
 
-Alternative installation is possible without local dependencies relying on [Docker](#docker). 
-Please install XAMPP,Composer and Laravel 9.x.
     
 Clone the repository
 
@@ -22,6 +23,10 @@ Copy the example env file and make the required configuration changes in the .en
 
     copy .env.example and rename the .env.copy.example to .env
 
+In .env file change DB_DATABASE to 
+
+    DB_DATABASE = quiz_app
+
 Generate a new application key
 
     php artisan key:generate
@@ -30,9 +35,6 @@ Run the database migrations (**Set the database connection in .env before migrat
 
     php artisan migrate
 
-Link the storage 
-
-    php artisan storage:link
 
 Start the local development server
 
