@@ -13,7 +13,7 @@ Clone the repository
 
 Switch to the repo folder
 
-    cd laravel-quiz-app
+    cd quiz-app
     
 Install all the dependencies using composer
 
