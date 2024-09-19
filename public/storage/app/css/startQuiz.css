@@ -1,0 +1,35 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f8f8f2;
+}
+
+.div-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+}
+
+.btn-start{
+    background-color: #28A745;
+}
+
+.btn-exit{
+    background-color: #FF4D4D;
+}
+
+.btn-start, .btn-exit {
+    width: 200px;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+}
+
+.btn-start:active, .btn-exit:active {
+   border: 3px solid black;
+}
+
+
+

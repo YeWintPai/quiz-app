@@ -35,6 +35,7 @@ Run the database migrations (**Set the database connection in .env before migrat
 
     php artisan migrate
     
+**Optional( Only if css files and images are not linking to path )**
 Link storage and public 
 
     First delete the storage file under /public (quiz_app/public/storage)
@@ -43,6 +44,7 @@ Now we can link using the following command
 
     php artisan storage:link
 
+**Optional**
 Start the local development server
 
     php artisan serve

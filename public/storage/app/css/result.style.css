@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  color: #fff !important;
+}
+/* share button */
+
+/* .share-btn-container {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.share-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.share-icon {
+  width: 40px;
+  height: auto;
+} */
+
+/* Result Page */
+
+.result-container {
+  position: relative;
+  width: 100%;
+  margin: 10rem auto 0 auto;
+}
+.trophy-img {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  z-index: 10;
+}
+.card-container {
+  width: 50%;
+}
+.resultCard {
+  background-color: #dedede;
+  padding-top: 70px;
+  position: relative;
+  z-index: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.btn-result {
+  background-color: #a97070 !important;
+  color: #fff;
+}
+.btn-result:hover {
+  background-color: #a97070c4 !important;
+}
+
+@media (max-width: 995px) {
+  .result-container {
+    margin: 6rem auto 0 auto;
+  }
+  /* Result Page */
+  .trophy-img {
+    width: 80px;
+  }
+
+  .card-container {
+    width: 80%;
+  }
+}

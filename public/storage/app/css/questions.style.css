@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+:root{
+    --hue-neutral :200;
+    --hue-wrong :0;
+    --hue-correct : 145;
+}
+.btn-danger {
+    background-color: rgb(255 0 24) !important; 
+    border-color: rgb(220, 0, 24) !important; 
+}
+/* navBar */
+.navBg{
+    background-color: #333;
+    width: 100vw;
+
+}
+.logoFont{
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: #fff !important;
+    margin-left: 10px;
+}
+.navItemBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-left: 58%;
+}
+
+.navMenuBox{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.navItemText{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-left: 2px;
+}
+.menuBarBox{
+    width: 45px;
+    height: 45px;
+    display: none;
+    margin-left: 95%;
+    cursor: pointer;
+}
+
+/* navBar */
+
+/* Margin Control */
+.margin-control-item{
+    text-align: center;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+/* Margin Control */
+
+/* Introduction & aboutHeader*/
+.introduction{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.aboutHeader{
+    padding: 1% 0 6% 0;
+    margin: 0 0 3% 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+.introduction .aboutParagraph{
+    font-weight: 400;
+    font-size: 25px;
+    width: 50%;
+    padding: 3% 1% 2% 1%;
+    margin: 0 auto;
+}
+/* Introduction */
+
+/* Our Members Profile */
+.profileBox{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+/* Our Members Profile*/
+
+/* Contact Us */
+.contactUs{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    margin: 0 30% 0 30%;
+}
+.contactUs .contactUsLg{
+    width: 35%;
+    height: auto;
+    margin: 0 auto;
+}
+.contactUs .fbAndIg{
+    width: 35%; 
+    margin-top: 15px;
+}
+.contactUs .eMail{
+    width: 40%;
+    margin-top: 15px;
+}
+/* Contact Us */
+@media screen and (max-width: 900px) {
+    .logoFont{
+        font-size: 28px;
+    }
+
+    .navBg{
+        background-color: #fafdff;
+        margin-top: -5%;
+    }
+
+    .menuBarBox{
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+        margin-top: 3%;
+        margin-left: 80%;
+        cursor: pointer;
+    }
+
+    .aboutHeader{
+        font-size: 20px;
+    }
+
+    .introduction .aboutParagraph{
+        font-weight: 400;
+        font-size: 15px;
+        width: 100%;
+        padding: 5% 3% 2% 3%;
+        margin: 0 auto;
+    }
+
+    .profileBox{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+    }
+
+    .miniPF{
+        width: 80%;
+        height: 80%;
+    }
+    .contactUs{
+        margin-top: -20px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .contactUs .contactUsLg{
+        width: 30%;
+        height: auto;
+    }
+
+    .contactUs .eMail{
+        width: 35%;
+        margin-top: 14px;
+    }
+}
+
+/* Questions */
+.htmlForm{
+    background: #333;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+}
+.containerBox{
+    border-color: solid;
+    border-radius: 10px;
+    margin: 5% 5% 2% 5%;
+    padding: 0 0 1% 0;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.textBox{
+    font-weight: bold;
+    font-size: 15px;
+}
+.iconBox{
+    width: 3%;
+    height: 3%;
+    margin: 1% 0 2% 95%;
+    cursor: pointer;
+}
+.iconBox:hover{
+    animation: hoving 0.5s infinite;
+}
+@keyframes hoving {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
+.questionBoxItem{
+    margin: 0 8% 2% 8%;
+}
+
+.ansList{
+    list-style:none;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.btnBoxItem{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    margin: 5% 0 3% 0;
+}
+.btnBoxItem .btnBoxItemList{
+    margin: 10% 0 10% 0;
+    width: 204px;
+    height: 50px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btnBoxDirection{
+    display: flex;
+    justify-content: space-between;
+}
+.btnBoxDirection .btnBoxItemList{
+    margin: 2% 4% 2% 4%;
+    width: 204px;
+    height: 50px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 900px) {
+    .htmlForm{
+        font-size: 35px;
+    }
+    .textBox{
+        font-weight: bold;
+        font-size: 9px;
+    }
+    .questionBoxItem{
+        font-size: 13px;
+    }
+    .ansList{
+        font-size: 12px;
+    }
+    .btnBoxDirection .btnBoxItemList{
+        margin: 2% 6% 2% 6%;
+        width: 80px;
+        height: 34px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .htmlForm{
+        font-size: 35px;
+    }
+    
+    .textBox{
+        font-weight: bold;
+        font-size: 9px;
+    }
+    .questionBoxItem{
+        font-size: 10px;
+    }
+    .ansList{
+        font-size: 9px;
+    }
+    .btnBoxItem .btnBoxItemList{
+        width: 75px;
+        height: 55px;
+    }
+    .btnBoxDirection .btnBoxItemList{
+        margin: 2% 6% 2% 6%;
+        width: 80px;
+        height: 34px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .htmlForm{
+        font-size: 28px;
+    }
+    .btnBoxItem .btnBoxItemList{
+        width: 65px;
+        height: 45px;
+    }
+    .btnBoxDirection .btnBoxItemList{
+        margin: 2% 6% 2% 6%;
+        width: 80px;
+        height: 34px;
+        font-size: 13px;
+    }
+}
