@@ -34,7 +34,14 @@ Generate a new application key
 Run the database migrations (**Set the database connection in .env before migrating**)
 
     php artisan migrate
+    
+Link storage and public 
 
+    First delete the storage file under /public (quiz_app/public/storage)
+
+Now we can link using the following command
+
+    php artisan storage:link
 
 Start the local development server
 
