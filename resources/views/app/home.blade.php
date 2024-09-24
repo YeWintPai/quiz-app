@@ -116,6 +116,9 @@
     </div>
     <!-- new -->
     <div class="copyright">@Copyright Code Crafters Myanmar 2024</div>
+    <div class="text-danger">
+      <a href="{{ route('google-auth') }}">Google Login</a>
+    </div>
     <!-- end -->
     <script src="{{asset('/storage/sb-admin2/vendor/jquery/jquery.min.js')}}"></script>
     <script

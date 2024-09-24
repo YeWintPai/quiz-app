@@ -5,6 +5,7 @@ use App\Http\Controllers\admin\QuestionsController;
 use App\Http\Controllers\admin\ChoicesController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\admin\FeedbackController;
+use App\Http\Controllers\admin\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -61,3 +62,7 @@ Route::prefix('admin')->group( function() {
     Route::resource('choices',ChoicesController::class);
     Route::resource('feedbacks',FeedbackController::class);
 });
+
+Route::get('/auth/google', [AuthController::class, 'redirect'])->name('google-auth');
+Route::get('/auth/google/callback', [AuthController::class, 'callback']);
+
