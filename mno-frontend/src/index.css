@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.menubarItem{
+    @apply px-3 font-bold text-lg hover:underline decoration-solid;
+}
+
+.items{
+    @apply text-center my-5 justify-center items-center sm:justify-items-center;
+}
+.title{
+    @apply font-bold text-4xl py-5 my-3;
+}
+.titleBox{
+    @apply grid grid-cols-3 md:px-10 sm:mx-10 justify-items-center;
+}
+.imgItem{
+    @apply w-5 md:w-14 my-10 md:my-5 md:mx-10 sm:mx-6;
+}

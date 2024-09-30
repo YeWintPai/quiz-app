@@ -1,0 +1,55 @@
+@media only screen and (max-width: 991px) {
+  /* new */
+.main-nav {
+    position: relative; /* absolute destroy offcanvas close feature */
+    width: 100%;
+    height: 100vh;
+  }
+  .main-nav-list {
+    position: absolute;
+    top: 50%; /* set center */
+    left: 50%;
+    transform: translate(-50%, -50%); /* set center */
+    color: #000;
+  }
+  .nav-item {
+    padding: 4rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .nav-link {
+    color: #000;
+  }
+  .navBg {
+    background-color: #f8f8f2;
+  }
+  .choose-language {
+    display: none;
+  }
+  .copyright {
+    left: 35%;
+  }
+  /* end */
+  .body-container {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh; /*new*/
+  }
+  .drop-down {
+    width: 100% !important;
+  }
+  .select-box-container {
+    margin-top: 0vh;
+  }
+  .btn-drop-down {
+    width: 50%; /*new*/
+  }
+  .codecrafter-mobile-header {
+    display: block;
+  }
+  .navbar-brand {  /*changed .navbar to .navbar-brand*/
+    display: none;
+  }
+}

@@ -1,0 +1,159 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8f8f2;
+}
+
+.select-box-container {
+  margin-top: 10vh;
+}
+
+.choose-language {
+  font-weight: 900;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.btn-drop-down {
+  width: 80%;
+  color: #737373;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px #c3c3c3;
+}
+
+.codecrafter-mobile-header {
+  display: none;
+  text-align: center;
+  margin-top: 30px; /*new*/
+  text-shadow: 4px 4px 4px #727272;
+}
+/* new. can add to other pages with nav bar */
+.nav-link {
+  color: white;
+  margin-left: 10px;
+}
+.navBg {
+  background-color: #333;
+}
+.logoFont {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.navMenuBox {
+  display: flex;
+  justify-content: end;
+  text-align: end;
+}
+.navItemText {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #fff !important;
+}
+.copyright {
+  color: #737373;
+  position: absolute;
+  top: 95%;
+  left: 60%;
+  font-size: 1vw;
+}
+/* end */
+
+/* not sure if it is new or old pls check */
+.drop-down-arrow {
+  border: solid #737373;
+  border-width: 0 0.4vw 0.4vw 0;
+  display: inline-block;
+  padding: 0.4vw;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.f-size-15 {
+  font-size: 1.5vw;
+}
+
+/* not sure if it is new or old pls check */
+
+
+/* feedback-css */
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f8f8f2;
+}
+
+.btn-grey {
+  background-color: #d9d9d9;
+  color: #000000;
+  border: 0.5px solid #000000;
+}
+
+.btn-darker-grey {
+  background-color: #999494;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-grey,
+.btn-darker-grey {
+  width: 20%;
+  font-size: 28px;
+}
+
+.feedback-heading {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.feedback-second-heading {
+  color: #000000;
+  font-size: 20px;
+  opacity: 70%;
+}
+
+.feedback-heading,
+.feedback-second-heading {
+  text-align: center;
+}
+
+hr {
+  background-color: #000000;
+  color: #000000;
+  border: none;
+  height: 2px;
+  opacity: 100%;
+}
+
+.optional {
+  font-size: 16px;
+  color: #000000;
+  opacity: 50%;
+}
+
+#txtAreaFeedback {
+  width: 100%;
+  height: 50%;
+  background-color: #c8c2c2;
+}
+
+.feedback-text {
+  font-size: 15px;
+  color: #000000;
+  opacity: 50%;
+}
+
+.btn-send-feedback {
+  margin-left: 35%;
+  width: 30%;
+  background-color: #999494;
+  font-size: 15px;
+  color: #ffffff;
+  border: none;
+  height: 50px;
+}
+
+.btn-grey:active, .btn-darker-grey:active, .btn-send-feedback:active {
+  border: 3px solid black;
+}

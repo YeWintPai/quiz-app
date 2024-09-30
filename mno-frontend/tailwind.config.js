@@ -1,14 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "mno-frontend/index.html",
-    "mno-frontend/src/**/*.{js,ts,jsx,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      logo: ["Audiowide", "system-ui"]
+    
+    extend: {
+      fontFamily: {
+        logo: ["Audiowide", "system-ui"]
+      },
+      colors:{
+        bars: '#333333'
+      },
     },
-    extend: {},
   },
   plugins: [],
 }
